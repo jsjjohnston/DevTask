@@ -1,0 +1,16 @@
+﻿@page
+@model DevTask.IndexModel
+@{
+}
+
+<h1>Loss Types</h1>
+@foreach (var loss in Model.LossTypes)
+{
+    <h2>Loss Type Id:@loss.LossTypeId Loss Type Code:@loss.LossTypeCode Loss Type Description: @loss.LossTypeDescription</h2>
+}
+
+<h1>Users</h1>
+@foreach (var user in Model.Users)
+{
+    <h2>User Id: @user.UserId Username: @user.UserName Display name: @user.DisplayName Active: @user.Active Password:@user.Password</h2>
+}
